@@ -6,6 +6,19 @@ public class Product {
     private String category;
     private int stock;
 
+    public Product(String name, double price, String category, int stock) {
+        if (price < 0) {
+            throw new IllegalArgumentException("Price cannot be negative");
+        }
+        if (stock < 0) {
+            throw new IllegalArgumentException("Stock cannot be negative");
+        }
+        this.name = name;
+        this.price = price;
+        this.category = category;
+        this.stock = stock;
+    }
+
     public String getName() {
         return name;
     }
@@ -36,6 +49,16 @@ public class Product {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", category='" + category + '\'' +
+                ", stock=" + stock +
+                '}';
     }
 
     // Phương thức hiển thị thông tin sản phẩm
