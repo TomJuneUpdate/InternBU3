@@ -1,4 +1,4 @@
-package com.nw.internbu3.review;
+package com.nw.internbu3.hw1.review;
 
 import com.nw.internbu3.hw1.Product;
 import com.nw.internbu3.hw1.User;
