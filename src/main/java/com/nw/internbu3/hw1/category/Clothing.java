@@ -1,4 +1,4 @@
-package com.nw.internbu3.hw1.Category;
+package com.nw.internbu3.hw1.category;
 
 import com.nw.internbu3.hw1.Product;
 

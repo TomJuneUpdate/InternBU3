@@ -1,8 +1,8 @@
-package com.nw.internbu3.hw1;
+package com.nw.internbu3.hw1.user;
 
 import java.util.List;
 
-public class Customer extends User{
+public class Customer extends User {
     private List<String> permissions;
 
     public Customer(String username, String email, String password) {

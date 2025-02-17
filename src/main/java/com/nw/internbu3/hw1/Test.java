@@ -3,6 +3,7 @@ package com.nw.internbu3.hw1;
 import com.nw.internbu3.hw1.mncart.CartManagement;
 import com.nw.internbu3.hw1.order.Order;
 import com.nw.internbu3.hw1.order.Status;
+import com.nw.internbu3.hw1.user.User;
 
 public class Test {
     public static void main(String[] args) {

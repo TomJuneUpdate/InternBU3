@@ -1,4 +1,4 @@
-package com.nw.internbu3.hw1;
+package com.nw.internbu3.hw1.user;
 
 import java.util.List;
 

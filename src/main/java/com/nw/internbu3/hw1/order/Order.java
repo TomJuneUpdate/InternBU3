@@ -1,6 +1,6 @@
 package com.nw.internbu3.hw1.order;
 
-import com.nw.internbu3.hw1.User;
+import com.nw.internbu3.hw1.user.User;
 import com.nw.internbu3.hw1.mncart.CartManagement;
 
 public class Order {
