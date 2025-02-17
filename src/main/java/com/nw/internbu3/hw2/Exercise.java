@@ -1,5 +1,7 @@
 package com.nw.internbu3.hw2;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class Exercise {
@@ -94,10 +96,38 @@ public class Exercise {
         scanner.close();
     }
 
+    /**
+     * Bai 6
+     */
+    public static void bankInterestCalculator(){
+        Scanner scanner = new Scanner(System.in);
+
+        // Nhập số tiền gốc
+        System.out.print("Nhập số tiền gửi (P): ");
+        BigDecimal principal = scanner.nextBigDecimal();
+
+        System.out.print("Nhập lãi suất hàng năm (%): ");
+        BigDecimal annualRate = scanner.nextBigDecimal().divide(BigDecimal.valueOf(100));
+
+        System.out.print("Nhập số năm gửi (n): ");
+        int years = Integer.parseInt(scanner.nextLine());
+
+        BigDecimal onePlusRate = BigDecimal.ONE.add(annualRate);
+        BigDecimal amount = principal.multiply(onePlusRate.pow(years));
+
+        amount = amount.setScale(2, RoundingMode.HALF_UP);
+
+        // In kết quả
+        System.out.println("Số tiền sau " + years + " năm: " + amount + " VND");
+
+        scanner.close();
+    }
+
     public static void main(String[] args) {
         System.out.println(exercise1(10));
         System.out.println(exercise2(102312435));
         System.out.println(analyzeAndSortDigits(-123232));
         speedCalculator();
+        bankInterestCalculator();
     }
 }

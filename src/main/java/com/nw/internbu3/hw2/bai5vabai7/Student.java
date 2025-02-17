@@ -1,4 +1,4 @@
-package com.nw.internbu3.hw2.bai5;
+package com.nw.internbu3.hw2.bai5vabai7;
 
 public class Student {
     private String name;
