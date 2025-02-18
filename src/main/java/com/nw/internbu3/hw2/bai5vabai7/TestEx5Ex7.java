@@ -2,7 +2,7 @@ package com.nw.internbu3.hw2.bai5vabai7;
 
 import java.util.Arrays;
 
-public class TestHw5 {
+public class TestEx5Ex7 {
     public static void main(String[] args) {
         // Array
         StudentMnUsingArray studentMn = StudentMnUsingArray.getInstance();

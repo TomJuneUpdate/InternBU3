@@ -56,7 +56,7 @@ public class Exercise {
     }
 
     /**
-     * Bài 5
+     * Bài 4
      */
     public static void speedCalculator(){
         Scanner scanner = new Scanner(System.in);
@@ -124,10 +124,15 @@ public class Exercise {
     }
 
     public static void main(String[] args) {
+        //Bài 1
         System.out.println(exercise1(10));
+        //Bài 2
         System.out.println(exercise2(102312435));
+        //Bài 3
         System.out.println(analyzeAndSortDigits(-123232));
+        //Bài 4
         speedCalculator();
+        //Bài 7
         bankInterestCalculator();
     }
 }
