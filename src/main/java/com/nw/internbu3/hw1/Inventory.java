@@ -1,7 +1,6 @@
 package com.nw.internbu3.hw1;
 
 import com.nw.internbu3.hw1.mncart.CartItem;
-import com.nw.internbu3.hw1.mncart.CartManagement;
 import com.nw.internbu3.hw1.order.Order;
 
 public class Inventory {
