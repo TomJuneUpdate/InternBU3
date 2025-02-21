@@ -2,7 +2,6 @@ package com.nw.internbu3.hw3.list;
 
 import com.nw.internbu3.hw1.Product;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,6 +14,7 @@ public class Cart {
 
     /**
      * So sanh dia chi bo nho co the gay loi
+     *
      * @param product
      */
     public void removeProduct(Product product) {

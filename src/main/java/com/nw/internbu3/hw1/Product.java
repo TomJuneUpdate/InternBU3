@@ -53,21 +53,21 @@ public class Product {
         this.stock = stock;
     }
 
-    /**
-     * Ghi đè phương thức equals và hashCode để đảm bảo HashSet nhận diện sản phẩm trùng lặp theo ID
-     */
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Product product = (Product) obj;
-        return Objects.equals(name, product.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name);
-    }
+//    /**
+//     * Ghi đè phương thức equals và hashCode để đảm bảo HashSet nhận diện sản phẩm trùng lặp theo ID
+//     */
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (this == obj) return true;
+//        if (obj == null || getClass() != obj.getClass()) return false;
+//        Product product = (Product) obj;
+//        return Objects.equals(name, product.name);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name);
+//    }
     @Override
     public String toString() {
         return "Product{" +

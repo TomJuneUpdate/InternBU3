@@ -19,8 +19,6 @@ public class ProductMnUsingSet {
         if (productSet.add(product)) {
             System.out.println("Đã thêm sản phẩm: " + product);
         } else {
-            productSet.remove(product);
-            productSet.add(product);
             System.out.println("Sản phẩm đã tồn tại: " + product);
         }
     }
