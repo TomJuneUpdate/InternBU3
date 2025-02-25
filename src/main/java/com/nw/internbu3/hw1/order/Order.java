@@ -3,6 +3,8 @@ package com.nw.internbu3.hw1.order;
 import com.nw.internbu3.hw1.user.User;
 import com.nw.internbu3.hw1.mncart.CartManagement;
 
+import java.util.Objects;
+
 public class Order {
     private static int orderCounter = 1;
     private int orderId;
@@ -60,6 +62,18 @@ public class Order {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Order order = (Order) o;
+        return orderId == order.orderId; // Định danh đơn hàng bằng ID
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(orderId);
+    }
+    @Override
     public String toString() {
         return "Order{" +
                 "orderId=" + orderId +
@@ -68,5 +82,4 @@ public class Order {
                 ", status=" + status +
                 '}';
     }
-
 }
